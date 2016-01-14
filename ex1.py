@@ -2,9 +2,7 @@
 print("First Exercise:")
 raw_input("Press enter to continue...")
 print("First Exercise:")
-print ("Welcome to Python")
-print ("Welcome Comp Sci")
-print ("Programming is fun \n \n")
+print ("Welcome to Python\nWelcome Comp Sci\nProgramming is fun \n \n")
 
 # Second excersise
 raw_input("Press enter to continue...")
