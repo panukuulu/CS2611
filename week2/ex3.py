@@ -1,4 +1,4 @@
-fval = input("Input final account value: ")
+fval = eval(input("Input final account value: "))
 fval = float(fval)
 rannual = input("Input annual interest rate: ")
 years = input("Input number of years: ")
