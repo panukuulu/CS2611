@@ -1,14 +1,19 @@
 name = input('Give employee\' name: ')
-hours = input('Enter number of hours worked in a week: ')
-rate = input('Enter hourly pay rate: ')
-tax = input('Enter tax witholding rate (0-1): ')
-tax2 = input('Enter other tax witholding rate (0-1): ')
+hours = eval(input('Enter number of hours worked in a week: '))
+rate = eval(input('Enter hourly pay rate: '))
+tax = eval(input('Enter tax witholding rate (0-1): '))
+tax2 = eval(input('Enter other tax witholding rate (0-1): '))
 
-'Do the math
-gpay = float(hours) * rate
-'deductions
+#Do the math
+gpay = hours * rate
+#deductions
 ded1 = gpay * tax
-ded2 = gpay2 * tax
+ded2 = gpay * tax2
 dedt = ded1 + ded2
 
-print('Employee name: {:s}\n\nHours worked: {:d}\n\n Pay rate: {:f} \n\n Gross pay: {:f} \n\n'.format(name, hours, rate, gpa))
+taxp = tax * 100
+tax2p = tax2 * 100
+netp = gpay - ded1 - ded2
+print('Employee name: {:s}\nHours worked: {:d}\nPay rate: {:.2f}\nGross pay: {:.2f}\n'.format(name, hours, rate, gpay))
+print('Deductions:\nTax Witholding ({:.2f})%: {:.2f}\nOther Tax Witholding ({:.2f})%: {:.2f}\nTotal deduction:  {:.2f}\n\nNet pay:{:.2f}'.format(taxp,ded1,tax2p,ded2,dedt,netp))
+
