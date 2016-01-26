@@ -18,5 +18,5 @@ netp = gpay - ded1 - ded2
 
 #print sheet
 print('Employee name: {:s}\nHours worked: {:d}\nPay rate: {:.2f}\nGross pay: {:.2f}\n'.format(name, hours, rate, gpay))
-print('Deductions:\nTax Witholding ({:.2f})%: {:.2f}\nOther Tax Witholding ({:.2f})%: {:.2f}\nTotal deduction:  {:.2f}\n\nNet pay:{:.2f}'.format(taxp,ded1,tax2p,ded2,dedt,netp))
+print('Deductions:\nTax Witholding ({:<1.1%})%: {:.2f}\nOther Tax Witholding ({:<1.1%})%: {:.2f}\nTotal deduction:  {:.2f}\n\nNet pay:{:.2f}'.format(tax,ded1,tax2,ded2,dedt,netp))
 
