@@ -4,6 +4,7 @@ def sort(number1, number2):
     else:
         return number2, number1
 
+#return multiple values
 n1, n2 = sort(3, 2)
 print("n1 is", n1)
 print("n2 is", n2)
