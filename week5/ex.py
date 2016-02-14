@@ -20,7 +20,7 @@ for i in range(0,10):
 
 feet=[]
 i = 0
-for i in range(0,46):
+for i in range(0,10):
     feet.append(meterToFoot(20+i))
     i+=1
 
@@ -34,7 +34,7 @@ for i in range(0,10):
     print("{:.2f} {:.2f}".format(i+1,meters[i]))
 
 i = 0
-for i in range(0,46):
+for i in range(0,10):
     if i == 0:
         print("Meters|Feet")
     print("{:.2f} {:.2f}".format(feet[i]/3.28084,feet[i]))
